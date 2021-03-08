@@ -1,0 +1,25 @@
+version: "2.0"
+
+rules:
+
+- rule: Greet
+  # This rule only applies to the start of a session.
+  conversation_start: True
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: respond to query
+  steps:
+  - intent: query
+  - action: utter_query

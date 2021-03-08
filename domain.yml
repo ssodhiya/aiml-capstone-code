@@ -1,0 +1,71 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - query
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_query/kisan_credit_card:
+  - text: "Please contact the nearest 'nationalized bank' or 'agriculture field officer' or 'marketting and recovery officer' of in your area"
+
+  utter_query/aphids_paddy:
+  - text: "Please spray Tricel-20 @ 3ml per liter of water to control aphids in paddy"
+
+  utter_query/aphidss:
+  - text: "Please spray Tricel-20 @ 3ml per liter of water to control aphids in paddy"
+
+  utter_query/aphids:
+  - text: "Please spray EKALUX @ 3ml per liter of water to control leaf hopper in rice/ paddy"
+
+  utter_query/leafhopper_rice:
+  - text: "Please spray EKALUX @ 3ml per liter of water to control leaf hopper in rice/ paddy"
+
+  utter_query/seed_treatment_paddy:
+  - text: "Treat the seed with MANCOZEB @ 2.5 gm per liter of water for 24 hours for seed treatment of paddy."
+
+  utter_query/stem_borer_rice:
+  - text: "Please spray Tricel-20 @ 3ml per liter of water to control stem borer in rice"
+
+  utter_query/control_blast:
+  - text: "Please apply BAVISTIN @ 1gm per liter of water to control blasts"
+
+  utter_query/post_emergence_weed_paddy:
+  - text: "Please apply TOP STAR @ 2ml per liter of water at 0-3 days after transplanting"
+
+  utter_query/top_dressing_paddy:
+  - text: "Please apply UREA @ 2m3 Kg per bigha as top dressing after 30 days"
+
+  utter_query/aphids_mustard:
+  - text: "Please spray ROGOR 35 EC @ 2 ml per liter of water to control aphids in mustard"
+
+  utter_query/fertilizer_dosage_rice:
+  - text: "Please use the following composition as the fertilizer for paddy per bigha - UREA=29 KG,SSP=50 KG,MOP=13 KG,ZnSO4=6 KG"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

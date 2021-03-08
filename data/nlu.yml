@@ -1,0 +1,171 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: query/kisan_credit_card
+  examples: |
+    - How to avail Kisan Credit Card facility?
+    - Where can i get the information about KCC?
+    - information about KCC
+    - what is Kisan credit card?
+    - what is KCC? 
+- intent: query/aphids_paddy
+  examples: |
+    - How to control aphids in paddy?
+    - How to control aphids?
+    - Control aphids in paddy.
+- intent: query/leafhopper_rice
+  examples: |
+    - How to control leaf hopper attack in boro rice?
+    - Control of leaf hopper attack in boro rice
+    - Leaf hopper issue in boro rice
+    - Problems in boro rice due to leaf hoppers
+    - Leaf Hopper issues in boro rice
+- intent: query/seed_treatment_paddy
+  examples: |
+    - How to do seed treatment in paddy?
+    - seed treatment of paddy
+    - What are the steps for seed treatment of paddy?
+- intent: query/stem_borer_rice
+  examples: |
+    - How to control stem borer in rice?
+    - control stem borer in rice
+    - Problem of stem borer in rice
+- intent: query/control_blast
+  examples: |
+    - How to control blast?
+    - How to control blast in paddy seedling?
+    - Problems of blast in paddy seedling.
+    - Issues of blast in paddy?
+- intent: query/post_emergence_weed_paddy
+  examples: |
+    - How to control post emergence weed in paddy?
+    - Control of weed in paddy
+    - Issues with post emergence weed in paddy.
+    - Problems of weed in paddy.
+- intent: query/top_dressing_paddy
+  examples: |
+    - How to top dressing in boro paddy?
+    - Dressing in paddy
+    - How to top dressing in paddy?
+    - How to do dressing in boro paddy?
+    - How to top dressing in boro paddy?
+- intent: query/aphids_mustard
+  examples: |
+    - How to control aphid attack in mustard
+    - Problems of aphids in mustard
+    - Aphids in mustard
+    - how do I stop aphid attack in mustard
+- intent: query/fertilizer_dosage_rice
+  examples: |
+    - How much fertilizer dosage for hybrid rice?
+    - What should be the fertilizer dosage for hybrid rice?
+    - How much fertilizer should I use for rice
+- intent: query/rice_stem_borer
+  examples: |
+    - What to do for rice stem borer?
+    - How to remove rice stem borer?
+    - Prevention from rice stem borer.
+- intent: query/control_leaf_rot_paddy
+  examples: |
+    - How to control leaf rot in nursery bed of paddy?
+    - My paddy nursery bed has rotten leaf how do I control it?
+    - Prevention of leaf rot in nursery bed.
+- intent: query/treatment_paddy_seed_before_sowing
+  examples: |
+    - What should I do for treatment of paddy seed before sowing?
+    - Treatment of paddy seed before sowing
+- intent: query/control_rodent_wheat
+  examples: |
+    - How to control rodent infestation on wheat?
+    - My wheat field is infested with rodents what should I do?
+    - What should I do to control wheat field infested with rodents?
