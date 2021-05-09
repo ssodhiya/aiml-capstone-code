@@ -12,23 +12,36 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Hello, I am KisanBot. How can I help you today?"
 
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
+  - text: "See you. Good Bye!!"
+
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_default:
+  - text: I'm sorry, I can't help you. Please try calling the Call Center at +91 9999999999 between 9:00AM and 5:00PM. Thanks!!
+
+  utter_more_help:
+  - text: Do you need any more help?
+
+  utter_ask_question:
+  - text: Sure let me know what help you need...
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_query/affirm:
+  - text: "Glad that it helped you! For any further queries please keep chatting else you can end the call. Thanks!!"
+
+  utter_query/deny:
+  - text: "I am sorry if it did not help you. You can further reach out Call Center Representative on +91 9999999999 between 9AM-5:PM Monday to Saturday. If you want to chat further please type in your query else you my end the chat. Thanks!!"
+
 
   utter_query/kisan_credit_card:
   - text: "Please contact the nearest 'nationalized bank' or 'agriculture field officer' or 'marketting and recovery officer' of in your area"
@@ -36,15 +49,21 @@ responses:
   utter_query/aphids_paddy:
   - text: "Please spray Tricel-20 @ 3ml per liter of water to control aphids in paddy"
 
-  utter_query/aphidss:
-  - text: "Please spray Tricel-20 @ 3ml per liter of water to control aphids in paddy"
+  utter_query/aphids_general:
+  - text: "SPRAY ROGOR @ 1.5 ML PER LITRE OF WATER"
 
-  utter_query/aphids:
-  - text: "Please spray EKALUX @ 3ml per liter of water to control leaf hopper in rice/ paddy"
+  utter_query/aphids_toria:
+  - text: "SUGGESTED TO SPRAY MALATHION 50 EC @ 2ML PER LITER OF WATER"
+
+  utter_query/aphids_maize:
+  - text: "SPRAY ROGOR 35 EC @ 2 ML/ LITER WATER"
+  - text: "SPRAY CHLOROPYRIPHOS @ 2 ML/LIT OF WATER"
 
   utter_query/leafhopper_rice:
   - text: "Please spray EKALUX @ 3ml per liter of water to control leaf hopper in rice/ paddy"
-
+  - text: "ADVICE TO APPLY TRICEL 20 @ 2 ML / LITRE"
+  - text: "SPRAY TARZAN(TRIAZOPHOS 40 EC) @ 1.5 ML PER LITRE OF WATER"
+  
   utter_query/seed_treatment_paddy:
   - text: "Treat the seed with MANCOZEB @ 2.5 gm per liter of water for 24 hours for seed treatment of paddy."
 
@@ -57,6 +76,14 @@ responses:
   utter_query/post_emergence_weed_paddy:
   - text: "Please apply TOP STAR @ 2ml per liter of water at 0-3 days after transplanting"
 
+  utter_query/control_rot:
+  - text: "APPLY BAVISTIN @ 1 GRAM PER LITRE OF WATER"
+  - text: "SPRAY CAPTAF @ 2 GM PER LITER OF WATER"
+
+  utter_query/control_rodent_wheat:
+  - text: "APPLY CELPHOS TAB @ 1 TAB PER PITH TO CONTROL RODENT"
+  - text: "APPLY ZINC PHOSPTIHE TABLET"
+
   utter_query/top_dressing_paddy:
   - text: "Please apply UREA @ 2m3 Kg per bigha as top dressing after 30 days"
 
@@ -65,7 +92,142 @@ responses:
 
   utter_query/fertilizer_dosage_rice:
   - text: "Please use the following composition as the fertilizer for paddy per bigha - UREA=29 KG,SSP=50 KG,MOP=13 KG,ZnSO4=6 KG"
+  
+  utter_query/mustard_saw_fly:
+  - text: "ADVISED TO APPLY EKALUX@ 2ML/LIT"
+  - text: "ADVISED TO APPLY MALATHION 50EC @ 2ML/LIT"
+  - text: "APPLY TRICEL 20 @ 2ML/LT OF WATER"
+  
+  utter_query/control_rodent_rice:
+  - text: "ADVICE TO SPRAY FURADONE AGAINST RATS"
+  - text: "ADVICE TO APPLY ZINC PHOSPHATE TABLET"
+  
+  utter_query/caterpillar:
+  - text: "SPRAY PROFEX SUPER @ 2ML PER LITRE OF WATER"
+  - text: "SPRAY MALATHION 50 EC @ 2 ML./LITRE OF WATER."
+  - text: "SPRAY EKALUX @ 2 ML PER LITRE OF WATER"
+  
+  utter_query/control_fruitfly:
+  - text: "SUGESSTED TO SPRAY MALATHION 50 EC @ 2 GM PER LITER OF WATER"
+  
+  utter_query/control_weeds_manual:
+  - text: "SUGGESTED TO DO WEEDING MANUALLY"
+  
+  utter_query/requires_malathion:
+  - text: "SUGGESTED TO SPRAY MALATHION 50 EC @ 2ML PER LITER OF WATER"
+  
+  utter_query/requires_bavistin:
+  - text: "APPLY BAVISTIN @ 1 GRAM PER LITRE OF WATER"
+  
+  utter_query/requires_tricel:
+  - text: "SPRAY TRICEL 20 @ 2 ML PER LITER OF WATER"
+  
+  utter_query/requires_rogor:
+  - text: "SPRAY ROGOR @ 2 ML PER LITER OF WATER"
 
+  utter_query/govt_subsidy:
+  - text: "RECOMMENDED HIM TO CONTACT OFFICE OF THE DISTRICT AGRICULTURE OFFICER"
+  utter_query/govt_scheme_sericulture:
+  - text: "Expert not available"
+  utter_query/govt_scheme_apply_lime_paddy_land:
+  - text: "ADVICED HIM TO DO SOIL TEST OF HIS LAND BEFORE APPLYING LIME"
+  utter_query/govt_scheme_power_tillers_rate:
+  - text: "ADVISED TO CONTACT VLEW OF YOUR AREA"
+  utter_query/govt_scheme_commercial_nursery:
+  - text: "ADVISED TO VISIT KVK,KAHIKUCHI,AZARA FOR MORE DETAIL OF SCHEME."
+  utter_query/govt_scheme_hydroponices:
+  - text: "ADVISED TO COMTACT KVK TINSUKIA, GELAPUKHURI ROAD , CRS CAMPUS, MOBILE NO : 9435523760" 
+  - text: "ADVISED TO CONTACT Dr. Mrinal Saikia, KVK, AAU, Shillongani, Nagaon, Assam-782002. PH NO:9435091910"
+  - text: "TOLD HIM ABOUT DETAILS OF HYDROPONICS CULTIVATION AND ADVISED TO VISIT BISWANATH COLLEGE OF AGRICULTURE FOR MORE DETAILS"
+  - text: "ADVISED TO CONTACT Dr. Mrinal Saikia, KVK, AAU, Shillongani, Nagaon, Assam-782002. PH NO:9435091910"
+  utter_query/govt_scheme_down_loading_website:
+  - text: "RECOMMENDED TO DOWNLOAD KISAN SUVIDHA APP"
+  utter_query/govt_scheme_soil_health_card:
+  - text: "Advised to contact with program coordinator of KVK, Nagaon"
+  utter_query/govt_scheme_soil_testing:
+  - text: "Advised to contact nearest agri, development officer"
+  - text: "ADVISED TO APPLY FOR SOIL HEALTH CARD"
+  utter_query/govt_scheme_bima_yozna:
+  - text: "It is not yet effective in Assam.contact Dist Agril. Office"
+  utter_query/govt_scheme_loan:
+  - text: "RECOMMENDED TO APPROACH NEAREST BANK"
+  utter_query/govt_scheme_kcc_loan:
+  - text: "ADVISED HIM TO VISIT DIST AGRIL OFFICE"
+  utter_query/govt_scheme_tractor_loan:
+  - text: "ADVICE TO CONTACT WITH NEAREST DISTRICT AGRICULTURE OFFICE or ADVICE TO CONTRACT WITH ADO FOR SUBSIDY SCHEME"
+  utter_query/govt_scheme_weather_data:
+  - text: "SUGGESTED HIM TO CONTACT AGRICULTURE DEPARTMENT"
+  utter_query/govt_scheme_kisan_call_centre:
+  - text: "FARMER'S WILL AVAIL INFORMATION IN THE FIELD OF AGRICULTURE/HORTICULTURE(PACKAGE OF PRACTICES,DISEASE AND PEST MANAGEMENT,VARIETY ETC),WEATHER FORECASTING,FISFERY RELATED QUERY,VETETERINARY RELATED QUERY ETC or ADVISED HIM TO VISIT DIST AGRIL DEPTT"
+  utter_query/govt_scheme_credit_card:
+  - text: "SUGGESTED TO CONTACT WITH NEAREST NATIONALIZED BANK, AGRICULTURE FIELD OFFICER/MARKETING AND RECOVERY OFFICER LOCATED IN HIS AREA. or ADVISED HIM TO VISIT DIST AGRIL DEPTT or EXPLAINED IN DETAILS ABOUT KISAN CREDIT CARD AND SUGGESTED TO APROACH NEAREST BANK"
+
+
+  utter_query/fertilizer_assamlemon:
+  - text: "Please use 20Kg Cowdung, 220 gm urea, 650 gm SSP and 170 gm mop per plant"
+  
+  utter_query/flowerdrop_lemon:
+  - text: "Please spray Planofix @ 1 ml per 5 liter of water at an interval of 15 days"
+  
+  utter_query/fruitsize_lemon:
+  - text: "Please spray Tracel @ 2 gm per liter of water"
+  
+  utter_query/flowerdrop_aonla:
+  - text: "Please spray Planofix 1 ml per 10 liter of water"
+  
+  utter_query/micronutrient_aonla:
+  - text: "Please spray Tracel 2 gram per liter of water"
+  
+  utter_query/fertilizer_arecanut:
+  - text: "Please use Urea 110 gm, SSP 120 gm, MOP 130 gm and compost 10 kg. Apply as ring method 1.5 ft from the base of the plant"
+  
+  utter_query/fertilizer_arecanut_old:
+  - text: "Please use Urea 225 gm, SSP 250 gm, MOP 270 gm, Borax 50g and compost 10 kg per plant. Divide the amount into two parts and apply"
+  
+  utter_query/fruitdrop_arecanut:
+  - text: "Please use cowdung and 150 gm urea, 250 gm SSP and 200 gm MOP with Borax 50g per plant"
+  
+  utter_query/micronutrient_arecanut:
+  - text: "Please use urea 300 g, SSP 600 g and MOP 400 g"
+  
+  utter_query/booster_banana:
+  - text: "Please apply green harvest solution @ 25 g in 10 liter of water and spray during flowering stage"
+  
+  utter_query/fertilizer_banana:
+  - text: "Please use Urea 100 gm, SSP 200 gm, MOP 250 gm and compost 10 kg. Apply as ring method 2 ft from the base of the plant"
+  
+  utter_query/vitamin_banana:
+  - text: "Please spray Bipul @ 2 ml per liter of water"
+  
+  utter_query/flowerdrop_beans:
+  - text: "Please spray Planofix @ 1 gm per 5 liter of water"
+  
+  utter_query/micronutrient_beans:
+  - text: "Please spray Bipul @ 2 ml per liter of water"
+  
+  utter_query/bioactivator_brinjal:
+  - text: "Please spray Mahaphal @ 2 ml per liter of water"
+  - text: "Please spray Isabion @ 2 ml per liter of water"
+  
+  utter_query/flowerdrop_brinjal:
+  - text: "Please spray Mahaphal @ 2 ml per liter of water"
+  - text: "Please spray Planofix @ 1 ml per 5 liter of water"
+  
+  utter_query/micronutrient_brinjal:
+  - text: "Please spray Mahaphal @ 2 ml per liter of water"
+  - text: "Please spray Tracel2 @ 2 gm per liter of water"
+  
+  utter_query/vitamin_brinjal:
+  - text: "Please spray Agrimic @ 2 ml per liter of water"
+  - text: "Please spray Tracel2 @ 2 gm per liter of water"
+  
+  utter_query/micronutrient_cabbage:
+  - text: "Please use 30kg urea, 50kg SSP and 11kg MOP per bigha"
+  - text: "Please spray mulitplex vegetable @ 2 gm per liter of water"
+  
+  utter_query/vitamin_cabbage:
+  - text: "Please mulitplex boron @ 2 gm per liter of water"
+  - text: "Please spray Tracel2 @ 2 gm per liter of water"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

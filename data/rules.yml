@@ -23,3 +23,11 @@ rules:
   steps:
   - intent: query
   - action: utter_query
+  - action: utter_did_that_help
+ 
+
+- rule: Implementation of the Two-Stage-Fallback
+  steps:
+  - intent: nlu_fallback
+  - action: action_two_stage_fallback
+  - active_loop: action_two_stage_fallback

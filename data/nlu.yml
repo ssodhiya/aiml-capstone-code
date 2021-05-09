@@ -9,13 +9,7 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  
 
 - intent: goodbye
   examples: |
@@ -39,6 +33,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - Yes, Thanks a lot!
+    - Thanks!
 
 - intent: deny
   examples: |
@@ -50,59 +46,46 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
+- intent: query/affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Yes, Thanks a lot!
+    - Thanks!
+- intent: query/deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
 - intent: query/kisan_credit_card
   examples: |
     - How to avail Kisan Credit Card facility?
     - Where can i get the information about KCC?
     - information about KCC
     - what is Kisan credit card?
-    - what is KCC? 
+    - what is KCC?
+    - ASKING THAT HOW TO AVAIL KISAN CREDIT CARD FACILITY
+    
 - intent: query/aphids_paddy
   examples: |
     - How to control aphids in paddy?
     - How to control aphids?
     - Control aphids in paddy.
+    - CONTROL OF APHIDS IN PADDY
 - intent: query/leafhopper_rice
   examples: |
     - How to control leaf hopper attack in boro rice?
@@ -110,22 +93,35 @@ nlu:
     - Leaf hopper issue in boro rice
     - Problems in boro rice due to leaf hoppers
     - Leaf Hopper issues in boro rice
+    - LEAF AND PLANT HOPPERS
+    - ASKING CONTROL OF LEAF HOPPER ATTACK IN PADDY
+    - ASKING CONTROL OF LEAF HOPPER ATTACK IN BORO RICE
+    - ASKING ABOUT CONTROL OF GREEN LEAF HOPPER
+    - ASKING CONTROL OF LEAF HOPPER ATTACK IN SUGARCANE
+    - ASKING ABOUT THE CONTROL MEASURE AGAINST PLANT HOPPER INFESTATION IN PADDY (BORO)
+    - GREEN LEAF HOPPER
+    - ASKING ABOUT THE CONTROL MEASURE AGAINST HOPPER INFESTATION SALI PADDY.
 - intent: query/seed_treatment_paddy
   examples: |
     - How to do seed treatment in paddy?
     - seed treatment of paddy
     - What are the steps for seed treatment of paddy?
-- intent: query/stem_borer_rice
-  examples: |
-    - How to control stem borer in rice?
-    - control stem borer in rice
-    - Problem of stem borer in rice
 - intent: query/control_blast
   examples: |
     - How to control blast?
     - How to control blast in paddy seedling?
     - Problems of blast in paddy seedling.
     - Issues of blast in paddy?
+    - PROBLEM OF BLAST
+    - PROBLEM OF BLAST IN BORO RICE NURSERY
+    - ASKING CONTROL LEAF BLAST ATTACK IN PADDY
+    - ASKING FOR THE CONTROL OF BLAST IN PADDY
+    - CONTROL MEASURE OF BLAST OF RICE
+    - PROBLEM OF BLAST IN RICE
+    - ASKING ABOUT CONTROL REMEDY FOR BLAST IN PADDY
+    - ASKING ABOUT BLAST OF SALI PADDY
+    - ASKING ABOUT SYMPTOMS OF BLAST OF RICE AND REMEDIAL MEASURES
+    - ASKING ABOUT THE CONTROL MEASURE FOR BLAST IN BORO PADDY
 - intent: query/post_emergence_weed_paddy
   examples: |
     - How to control post emergence weed in paddy?
@@ -145,21 +141,62 @@ nlu:
     - Problems of aphids in mustard
     - Aphids in mustard
     - how do I stop aphid attack in mustard
+    - ASKING ABOUT CONTROL MEASURE OF APHIDS IN RAPESSED AND MUSTARD.
+    - ASKING CONTROL OF APHID ATTACK KIN MUSTARD
+    - ASKING ABOUT THE CONTROL MEASURE TO CONTROL APHID INFESTATION IN MUSTARD
+    - ASKING FOR THE CONTROL MEASURE AGAINST APHIDS IN MUSTARD CROP CULTIVATION
+    - ASKING ABOUT APHID INFESTATION ON MUSTARD
+    - ASKING ABOUT THE CONTROL OF MUSTARD APHID
+    - CONTROL OF APHIDS IN MUSTARD
+    - APHID PROBLEM IN MUSTARD
+    
 - intent: query/fertilizer_dosage_rice
   examples: |
     - How much fertilizer dosage for hybrid rice?
     - What should be the fertilizer dosage for hybrid rice?
     - How much fertilizer should I use for rice
-- intent: query/rice_stem_borer
+- intent: query/stem_borer_rice
   examples: |
     - What to do for rice stem borer?
     - How to remove rice stem borer?
     - Prevention from rice stem borer.
-- intent: query/control_leaf_rot_paddy
+    - ASKING FOR THE CONTROL OF STEM BORER IN RICE
+    - CONTROL OF BORER IN MAIZE
+    - ASKING FOR CONTROL OF RICE STEM BORER
+    - RICE STEM BORER
+    - CONTROL MEASURES OF RICE STEM BORER
+    - PROBLEM OF RICE STEM BORER.
+    - QUERY REGARDING CONTROL OF STEM BORER IN RICE
+    - ASKING ABOUT CONTROL MEASURE OF STEM BORER OF RICE
+    - ASKING ABOUT MANAGEMENT OF STEM BORER IN RICE
+    - CONTROL OF STEM BORER IN PADDY
+    - ASKING ABOUT CONTROL OF STEM BORER IN PADDY
+    - ASKING ABOUT OF STEM BORER IN PADDY
+    - ASKING ABOUT THE MANAGEMENT OF STEM BORER
+    - ASKING ABOUT THE PREVENTIVE CONTROL MEASURE AGAINST STEM BORER IN BORO PADDY
+    - CONTROL OF STEM BORER IN PADDY
+    - ASKING ABOUT CONTROL OF STEM BORER IN PADDY
+    - QUERY REGARDING CONTROL OF STEM BORER IN PADDY
+- intent: query/control_rot
   examples: |
     - How to control leaf rot in nursery bed of paddy?
     - My paddy nursery bed has rotten leaf how do I control it?
     - Prevention of leaf rot in nursery bed.
+    - ASKING CONTROL OF LEAF ROT IN SEEDLING NURSERY OF PADDY
+    - ASKING CONTROL OF LEAF ROT IN NURSERY BED OF PADDY
+    - ASKING CONTROL OF LEAF ROT IN SEED BED NURSERY OF PADDY
+    - ASKING CONTROL OF LEAF ROT IN PADDY
+    - ASKING CONTROL OF LEAF ROT IN MUSTARD
+    - ASKING CONTROL OF LEAF ROT IN SEEDLING NURSERY OF PADDY
+    - ASKING FOR THE CONTROL OF STEM ROT IN SUGARCANE
+    - ASKING FOR THE CONTROL OF ROOT ROT IN SUGARCANE
+    - ASKING FOR THE CONTROL OF SHEATH ROT IN BORO RICE
+    - ASKING CONTROL OF LEAF ROT IN PADDY
+    - ROOT ROT PROBLEM IN RICE
+    - ASKING ABOUT ROOT ROT IN PADDY
+    - ASKING ABOUT THE ROOT ROT IN MAIZE
+    - PROBLEM OF ROOT ROT IN JUTE.
+    - ASKING ABOUT PLANT PROTECTION IN SAALI SEEDLING
 - intent: query/treatment_paddy_seed_before_sowing
   examples: |
     - What should I do for treatment of paddy seed before sowing?
@@ -169,3 +206,325 @@ nlu:
     - How to control rodent infestation on wheat?
     - My wheat field is infested with rodents what should I do?
     - What should I do to control wheat field infested with rodents?
+    - ASKING ABOUT CONTROL OF RODENT INFESTATION ON WHEAT
+    - ASKING CONTROL OF RODENT ATTACK IN WHEAT
+    - PROBLEM OF RODENTS IN CROP.
+    - QUERY REGARDING RODENTS
+    - ASKING ABOUT CONTROL OF RODENTS IN MAIN FIELD
+    - ASKING ABOUT CONTROL OF RODENT
+- intent: query/govt_schemes
+  examples: |
+     - ASKING FOR GOVT SCHEME?
+     - QUERY REGARDING GOVERNMENT SCHEME?
+     - ASKING ABOUT DIFFERENT GOVERNMENT SCHEME?
+     - ASKING ABOUT THE GOVT SCHEME FOR GETTING FREE SEED,FERTILIZER AND AID OF TRACTOR?
+- intent: query/govt_schemes_others
+  examples: |
+     - ASKING ABOUT THE GOVT SCHEME TO GET TRACTOR,POWER TILLER IN SUBSIDY RATE?
+     - ASKING ABOUT THE GOVT. SCHEMES UNDER AGRI. DEPTT.?
+- intent: query/govt_schemes_tractor
+  examples: |
+   - ASKING FOR GOVT SCHEME FOR SMALL TRACTOR?
+- intent: query/govt_schemes_pumpset
+  examples: |
+   - ASKING ABOUT THE GOVT SCHEME FOR PUMPSET DISTRIBUTION?
+- intent: query/govt_schemes_pesticide
+  examples: |
+   - ASKING ABOUT THE GOVT SCHEME FOR PESTICIDE DISTRIBUTION?
+- intent: query/govt_subsidy
+  examples: |
+     - ASKING ABOUT GOVT SUBSIDY SCHEME OF TRACTOR?
+     - ASKING FOR GOVT SUBSIDISED SCHEME OF AGRICULTURE?
+     - ASKING ABOUT GOVT SUBSIDY SCHEME OF TRACTOR? 
+     - ASKING FOR GOVT SUBSIDISED SCHEME?
+     - QUERY REGARDING SUNSCIDY SCHEME OF STATE GOVERNMENT
+     - ASKING FOR THE USSD REGISTRATION NO?
+- intent: query/govt_scheme_credit_card
+  examples: |
+     - ASKING THAT HOW TO AVAIL KISAN CREDIT CARD FACILITY?
+     - ASKING ABOUT THE KISAN CREDIT CARD?
+     - APPLYING PROCEDURE  OF KISAN CREDIT CARD?
+- intent: query/govt_scheme_kisan_call_centre
+  examples: | 
+     - ASKING WHAT TYPE OF INFORMATION FARMER'S AVAIL FROM KISAN CALL CENTRE?
+     - ASKING ABOUT THE LANGUAGE PROBLEM?
+     - ASKING ABOUT STOPAGE OF SMS?
+     - COMPLAIN AGAINST DD KISAAN SMS SYSTEM AND WANT TO STOP IT?
+     - Query regarding ussd service?
+     - ASKING ABOUT THE SCHEME FOR FREE DISTRIBUTION OF PADDY SEEDS.?
+- intent: query/govt_scheme_organic_farming
+  examples: | 
+     - ASKING ABOUT THE ORGANIC FARMING?
+- intent: query/govt_scheme_weather_data
+  examples: | 
+     - Query regarding weather data?
+- intent: query/govt_scheme_loan
+  examples: | 
+     - QUERY REGARDING LOAN ALLOTMENT?
+- intent: query/govt_scheme_tractor_loan
+  examples: | 
+     - ASKING ABOUT TRACTOR LOAN?
+- intent: query/govt_scheme_kcc_loan
+  examples: | 
+     - UERRY REGARDING KCC LOAN?
+- intent: query/govt_scheme_bima_yozna
+  examples: | 
+     - Asking about fasal bima yozna?
+- intent: query/govt_scheme_soil_testing
+  examples: | 
+     - QUERY REGARDING SOIL TESTING?
+- intent: query/govt_scheme_soil_health_card
+  examples: | 
+     - QUERY REGARDING SOIL HEALTH CARD?
+- intent: query/govt_scheme_down_loading_website
+  examples: | 
+     - ASKING ABOUT THE AGRICULTURAL WEBSITE FOR DOWN LOADING?
+- intent: query/govt_scheme_hydroponices
+  examples: | 
+     - QUERY REGARDING HYDROPONICS?
+- intent: query/govt_scheme_commercial_nursery
+  examples: | 
+     - ASKING ABOUT THE PROCESS TO OPEN NURSERY IN COMMERCIAL BASIS?
+- intent: query/govt_scheme_power_tillers_rate
+  examples: | 
+     - QUERY REGARDING RATE OF POWER TILLERS?
+- intent: query/govt_scheme_apply_lime_paddy_land
+  examples: | 
+     - WANT TO KNOW HOW TO APPLY LIME IN HIS PADDY LAND?
+- intent: query/govt_scheme_sericulture
+  examples: | 
+     - Asking about sericulture scheme?
+- intent: query/aphids_general
+  examples: | 
+     - APHID PROBLEM
+     - ASKING FOR CONTROL OF APHID
+     - APHID AND SAW FLY ATTACK
+- intent: query/aphids_toria
+  examples: | 
+     - ASKING FOR THE CONTROL OF APHIDS IN TORIA
+     - ASKING ABOUT THE CONTROL MEASURE TO CONTROL APHID INFESTATION IN TORIA
+     - ASKING ABOUT CONTROL OF APHID IN TORIA
+- intent: query/aphids_maize
+  examples: | 
+     - CONTROL OF APHIDS IN MAIZE
+     - WHEAT APHID IN MAIZE
+     - ASKING ABOUT CONTROL OF APHID IN TORIA
+- intent: query/mustard_saw_fly
+  examples: | 
+     - ASKING CONTROL OF MUSTARD SAW FLY ATTACK IN MUSTARD
+     - QUERY REGARDING SAW FLY
+     - ASKING ABOUT THE CONTROL MEASURE AGAINST MUSTARD SAW FLY INFESTATION IN MUSTSRD.
+     - ASKING ABOUT THE CONTROL OF MUSTARD SAW FLY IN MUSTARD
+     - QUERY REGARDING MUSTARD SAW FLY
+     - ASKING CONTROL OF SAW FLY ATTACK IN MUSTARD
+     - ASKING CONTROL OF MUSTARD SAW FLY IN MUSTARD CULTIVATION
+     - CONTROL OF MUSTARD SAW FLY IN MUSTARD
+     - QUERY REGARDING TO CONTROL MUSTARD SAW FLY
+- intent: query/control_rodent_rice
+  examples: | 
+     - PROBLEM OF RODENTS IN CROP
+     - ASKING ABOUT CONTROL OF RODENT IN PADDY FIELD
+     - ASKING CONTROL OF RODENT ATTACK IN PADDY FIELD
+     - WANT TO KNOW REGARDING RODENT ATTACK IN PADDY
+     - QUERY REGARDING RODENTS ATTACK IN PADDY FIELD
+     - QUERY REGARDING RODENTS
+     - ASKING ABOUT THE CONTROL MEASURE FOR RODENT (RAT) IN PADDY
+     - QUERY REGARDING RODENT MANAGEMENT IN RICE FIELD
+- intent: query/caterpillar
+  examples: | 
+     - QUERY REGARDING CONTROL MEASURES OF BUNCH CATERPILAR IN MUSTARD
+     - CATERPILLAR PROBLEM IN MAIZE
+     - LEAF EATING CATERPILLAR PROBLEM IN MAIZE
+     - ASKING ABOUT THE CONTROL MEASURE AGAINST CATERPILLAR ATTACK IN CHICK PEA OR BENGAL GRAM
+     - CONTROL MEASURE OF LEAF EATING CATERPILLER OF RAYA
+     - ASKING FOR THE CONTROL OF CATERPILLAR IN RICE CULTIVATION
+     - ASKING FOR THE CONTROL OF CATERPILLAR IN RICE CULTIVATION
+     - ASKING ABOUT THE CONTROL MEASURE TO CONTROL CATERPILLAR IN RICE CULTIVATION
+     - PROBLEM OF CATERPILLER.
+     - QUERY REGARDING CONTROL MEASURES OF LEAF EATING CATERPILAR IN PADDY
+- intent: query/control_fruitfly
+  examples: | 
+     - ASKING ABOUT FRUIT FLY IN RICE
+     - ASKING FOR THE CONTROL OF FRUIT FLY IN PUMPKIN
+     - QUERY REGARDING FRUIT FLY IN MUSTARD
+- intent: query/control_weeds_manual
+  examples: | 
+     - ASKING ABOUT CONTROL OF WEED ON GREEN GRAM
+     - ASKING ABOUT INTERCULTURE OPERATION FOR CONTROL OF WEED IN RICE
+     - ASKING FOR THE CONTROL OF WEEDS IN RICE CULTIVATION
+     - CONTROL MEASURE OF WEEDS IN JUTE
+     - ASKING ABOUT THE PROCEDURE FOR REDUCING WEED PROBLEM IN PADDY
+     - ASKING ABOUT THE CONTROL MEASURE AGAINST WEED IN SALI PADDY
+- intent: query/requires_bavistin
+  examples: | 
+     - PROBLEM OF BLAST
+     - ASKING ABOUT FUNGAL WILT OF SUGARCANE
+     - CONTROL OF BLAST IN PADDY SEEDLINGS BED
+     - ASKING CONTROL OF LEAF ROT IN MUSTARD
+     - ASKING SEED TREATMENT METHOD OF BORO RICE
+     - ASKING FOR THE CONTROL OF FUNGAL WILT IN TORIA
+     - ASKING FOR THE CONTROL OF BLAST IN BORO RICE
+     - BLAST PROBLEM IN RICE
+     - ASKING ABOUT THE CONTROL MEASURE TO CONTROL FUNGAL WILT DISEASE IN BORO RICE
+     - ASKING ABOUT CONTROL OF BLAST IN SALI PADDY
+     - ASKING ABOUT CONTROL OF BLAST OF RICE
+     - ASKING ABOUT ROOT ROT IN PADDY
+     - ASKING ABOUT CONTROL OF LEAF RUST
+     - ASKING ABOUT CONTROL OF RUST
+     - ASKING ABOUT SEED TREATMENT OF AHU RICE
+     - ASKING FOR THE CONTROL OF RED SPOT IN RICE
+     - CONTROL MEASURES OF ASCOCHYTA BLIGHT
+- intent: query/requires_tricel
+  examples: | 
+     - ASKING ABOUT INSECT PROBLEM IN OILSEED
+     - PROBLEM OF TERMITE IN MAIZE
+     - CONTROL OF HISPA IN PADDY
+     - ASKING FOR THE CONTROL OF STEM BORER AND WHITE SPOT IN RICE CULTIVATION
+     - ASKING ABOUT GRUB INFESTATION ON RICE
+     - ASKING ABOUT CONTROL OF WHITE GRUB
+     - ASKING ABOUT CONTROL OF RICE HISPA
+     - QUERY REGARDING CONTROL MEASURES OF TERMITE IN SUGARCANE
+     - ASKING ABOUT FRUIT FLY IN RICE
+     - ASKING ABOUT THE CONTROL OF CASE WORM IN PADDY
+     - ASKING ABOUT THE CONTROL OF INSECT AND FUNGUS IN PADDY
+     - QUERY REGARDING CONTROL OF RICE HISPA IN PADDY
+     - ASKING ABOUT INSECT PEST OF RICE
+     - QUERY REGARDING SWARMING CATERPILLAR MANAGEMENT
+     - QUERY REGARDING INSECT INFESTATION IN RICE FIELD
+     - ASKING ABOUT CONTROL OF LEAF EATING CATERPILLAR
+     - QUERY REGARDING INSECT INFESTATION IN MUSTARD
+     - QUERY REGARDING PEST CONTROL IN MAIZE
+- intent: query/requires_malathion
+  examples: | 
+     - ASKING ABOUT CONTROL MEASURE OF APHIDS IN RAPESSED AND MUSTARD
+     - ASKING FOR THE CONTROL OF APHIDS IN TORIA
+     - ASKING ABOUT THE CONTROL MEASURE AGAINST APHID INFESTATION IN MESTA
+     - CONTROL MEASURE OF PEST
+     - ASKING ABOUT WHITE GURB INFESTATION ON RICE
+     - CONTROL MEASURE OF PEST INFESTATION
+     - PEST CONTROL IN BOTTLE GOURD
+     - CONTROL MEASURE OF LEAF EATING CATERPILLER OF RAYA
+     - ASKING FOR THE CONTROL OF FRUIT FLY IN PUMPKIN
+     - PEST CONTROL IN GREEN GRAM
+     - ASKING ABOUT CONTROL RICE SKIPPER
+     - ASKING ABOUT USING LINDANE PESTICIDE IN PLANT AGAINST ANTS
+     - ASKED ABOUT PREVENTION OF INSTECT INFESTATION
+     - ASKING ABOUT THE CONTROL MEASURE OF GANDHI BUG IN RICE
+     - ASKING ABOUT CONTROL OF BACTERIAL LEAF BLIGHT
+     - ASKING ABOUT PRE-INSECT CONTROL IN MUSTARD CULTURE
+     - ASKING ABOUT CONTROL OF GANDHI BUG
+     - ASKING ABOUT CONTROL REMEDY FOR GRASSHOPPER IN RICE
+     - ASKING ABOUT CONTROL OF GRAM POD BORER IN BLACK GRAM
+     - ASKING ABOUT CONTROL OF PINK STEM BORER OF MAIZE
+- intent: query/requires_rogor
+  examples: | 
+     - CONTROL OF APHIDS IN PADDY
+     - CONTROL OF APHIDS IN MUSTARD
+     - CONTROL MEASURE OF PEST INFESTATION
+     - CONTROL MEASURES OF APHIDS
+     - PROBLEM OF APHIDS IN LENTIL.
+     - ASKING FOR CONTROL OF GRASSY STUNT DISEASE
+     - PEST CONTROL IN JUTE
+     - ASKING ABOUT CONTROL MEASURE OF INSECT IN RICE
+     - ASKING ABOUT CONTROL OF YELLOW MOSAIC IN BLACKGRAM
+
+
+
+- intent: query/fertilizer_assamlemon
+  examples: |
+    - How much fertilizer dose for Assam Lemon?
+    - Fertilizer dose for 1 year seedling of Assam Lemon?
+- intent: query/flowerdrop_lemon
+  examples: |
+    - What are the control measures for flower drop in Lemon?
+    - How to prevent immature flower drop in Lemon?
+    - How to control flower drop in Lemon?
+- intent: query/fruitsize_lemon
+  examples: |
+    - How to increase the production of Lemon?
+    - How to increase the fruit size of Lemon?
+- intent: query/flowerdrop_aonla
+  examples: |
+    - How to control flower drop in Aonla?
+    - Remedy for non-bearing problem in Aonla?
+    - How to prevent premature falling of Aonla flower?
+    - How much planofix should be used to avoid flower dropping in Aonla?
+- intent: query/micronutrient_aonla
+  examples: |
+    - How to manage micro nutrient in Aonla?
+    - What micro nutrient should be applied to Aonla?
+    - Micro nutrient management in Aonla?
+- intent: query/fertilizer_arecanut
+  examples: |
+    - Fertilizer dose for Arecanut?
+    - Which fertilizer to use for Arecanut?
+    - How much fertilizer dose for Arecanut?
+- intent: query/fertilizer_arecanut_old
+  examples: |
+    - Fertilizer dose for 5 year old Arecanut?
+    - Which fertilizer to use for 10 year old Arecanut?
+    - How much fertilizer dose for 12 year old Arecanut?
+- intent: query/fruitdrop_arecanut
+  examples: |
+    - How to stop premature nut cracking of Arecanut?
+    - How to stop premature nut dropping in Arecanut?
+    - How to control premature nut dropping of Arecanut?
+- intent: query/micronutrient_arecanut
+  examples: |
+    - How to manage micro nutrient in Aonla?
+    - What micro nutrient should be applied to Aonla?
+    - Micro nutrient management in Aonla?
+- intent: query/booster_banana
+  examples: |
+    - Please suggest a crop booster which can increase Banana production?
+    - Which crop booster for Banana?
+    - What are the ways to increase fruit size of Banana?
+- intent: query/fertilizer_banana
+  examples: |
+    - Please suggest fertilizer for Banana?
+    - Which fertilizer can be used in Banana?
+    - Fertilizer in Banana?
+- intent: query/vitamin_banana
+  examples: |
+    - Please suggest Vitamin spray for Banana?
+    - Which Vitamin spray can be used in Banana?
+    - Vitamin in Banana?
+- intent: query/flowerdrop_beans
+  examples: |
+    - How to increase the number of flower in Beans?
+    - How to control flower dropping in Beans?
+    - How to prevent flower dropping in Beans?
+- intent: query/micronutrient_beans
+  examples: |
+    - How to manage micro nutrient in Beans?
+    - Please suggest micro nutrient in Beans?
+- intent: query/bioactivator_brinjal
+  examples: |
+    - Which bioactivator can be used in Brinjal?
+    - Please suggest crop booster in Brinjal?
+    - How to use bio activator in Brinjal?
+- intent: query/flowerdrop_brinjal
+  examples: |
+    - Please suggest a remedy for flower drop in Brinjal?
+    - How to prevent premature falling of Brinjal flower?
+    - Flower dropping in Brinjal?
+- intent: query/micronutrient_brinjal
+  examples: |
+    - Please suggest micro nutrient in Brinjal?
+    - How to manage micro nutrient in Brinjal?
+    - Application of micro nutrient in Brinjal?
+- intent: query/vitamin_brinjal
+  examples: |
+    - Please suggest vitamin solution in Brinjal?
+    - What are the benefits of vitamin solution in Brinjal?
+    - Vitamin in Brinjal?
+- intent: query/micronutrient_cabbage
+  examples: |
+    - Please suggest micro nutrient in Cabbage?
+    - How to manage micro nutrient in Cabbage?
+    - Application of micro nutrient in Cabbage?
+- intent: query/vitamin_cabbage
+  examples: |
+    - Please suggest vitamin solution in Cabbage?
+    - What are the benefits of vitamin solution in Cabbage?
+    - Vitamin in Cabbage?
