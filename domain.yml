@@ -21,6 +21,12 @@ responses:
   - text: "Bye"
   - text: "See you. Good Bye!!"
 
+  utter_deny:
+  - text: "I am sorry if it did not help you. You can further reach out Call Center Representative on +91 9999999999 between 9AM-5:PM Monday to Saturday. If you want to chat further please type in your query else you my end the chat. Thanks!!"
+
+  utter_affirm:
+  - text: "Glad that it helped you! For any further queries please keep chatting else you can end the call. Thanks!!"
+
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
@@ -35,13 +41,6 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-  utter_query/affirm:
-  - text: "Glad that it helped you! For any further queries please keep chatting else you can end the call. Thanks!!"
-
-  utter_query/deny:
-  - text: "I am sorry if it did not help you. You can further reach out Call Center Representative on +91 9999999999 between 9AM-5:PM Monday to Saturday. If you want to chat further please type in your query else you my end the chat. Thanks!!"
-
 
   utter_query/kisan_credit_card:
   - text: "Please contact the nearest 'nationalized bank' or 'agriculture field officer' or 'marketting and recovery officer' of in your area"
