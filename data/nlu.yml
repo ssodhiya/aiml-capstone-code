@@ -52,25 +52,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: query/affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - Yes, Thanks a lot!
-    - Thanks!
-- intent: query/deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+
 - intent: query/kisan_credit_card
   examples: |
     - How to avail Kisan Credit Card facility?
